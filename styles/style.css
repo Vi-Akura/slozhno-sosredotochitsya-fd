@@ -37,7 +37,7 @@
 }
 
 .header__theme-menu {
-  padding-top: 18px;
+  padding-top: 20px;
 }
 
 .header__theme-menu-list {
@@ -45,7 +45,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 25px;
+  gap: 10px;
 }
 
 .header__theme-menu-button {
@@ -57,11 +57,13 @@
   text-align: center;
   color: var(--button-color, #ff0070);
   background: none;
-  border: none;
+  border: 1px solid transparent;
+  padding: 1.5px 13px;
 }
 
 .header__theme-menu-button:hover {
   border: 1px solid var(--button-hover, rgba(255, 0, 112, 0.4));
+  padding: 1.5px 13px;
 }
 
 .header__theme-menu-button:focus-visible {

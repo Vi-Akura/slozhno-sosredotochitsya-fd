@@ -1,6 +1,6 @@
 :root.theme-light {
   --bg-image: url(../images/cover-image-light.png);
-  --bg-color: ;
+  --bg-color: #ffeef6;
   --accent-color: #FF8DCB;
   --heading-color: #FFC2E6;
   --text-color: #353430;
@@ -30,4 +30,13 @@
 
 .theme-light .decorative-text {
   display: none;
+}
+
+.theme-light .header__theme-menu-button_type_dark {
+  outline: none;
+}
+
+.theme-light .header__theme-menu-button_type_light {
+  outline: 1px solid var(--button-color, #353430);
+  padding: 1.5px 13px;
 }
