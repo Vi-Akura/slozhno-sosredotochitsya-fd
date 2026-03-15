@@ -29,14 +29,5 @@
 }
 
 .theme-light .decorative-text {
-  display: none;
-}
-
-.theme-light .header__theme-menu-button_type_dark {
-  outline: none;
-}
-
-.theme-light .header__theme-menu-button_type_light {
-  outline: 1px solid var(--button-color, #353430);
-  padding: 1.5px 13px;
+  visibility: hidden;
 }
