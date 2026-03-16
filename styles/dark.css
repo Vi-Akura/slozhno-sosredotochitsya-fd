@@ -11,3 +11,19 @@
   --links-color: #f1b2ce;
   --button-hover: rgba(255, 0, 112, 0.4);
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-image: url(../images/cover-image-dark.png);
+  --bg-color: #000028;
+  --accent-color: #ff0070;
+  --heading-color: #db00ff;
+  --text-color: #000028;
+  --info-color: #f1b2ce;
+  --title-color: #ff0070;
+  --button-color: #ff0070;
+  --area-color: #ff0070;
+  --links-color: #f1b2ce;
+  --button-hover: rgba(255, 0, 112, 0.4);
+  }
+}
