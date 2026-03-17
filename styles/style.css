@@ -481,8 +481,8 @@
   grid-template-columns: 1fr;
   grid-template-rows: min-content 1fr;
   grid-template-areas: 
-  "title . ."
-  "list list list";
+  "title"
+  "list";
 }
 
 .section__list-attention {
