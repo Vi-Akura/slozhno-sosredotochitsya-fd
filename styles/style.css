@@ -331,7 +331,7 @@
   text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
 }
 
-@media (width <= 768px) {
+@media (width >= 768px) and (width <= 1023px) {
 .header {
   min-height: 1024px;
 }
@@ -412,7 +412,7 @@
 }
 }
 
-@media (width <= 375px) {
+@media (max-width: 767px) {
 .header {
   min-height: 668px;
   margin-left: 0;
@@ -427,10 +427,13 @@
 
 .header__theme-menu {
   margin-right: 10px;
-  padding-top: 9px;
+  padding-top: 75px;
 }
 
 .header__theme-menu-list {
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
   gap: 13px;
 }
 
@@ -484,6 +487,7 @@
 
 .section__list-attention {
   display: flex;
+  flex-direction: column;
   gap: 0;
   grid-area: list;
 }

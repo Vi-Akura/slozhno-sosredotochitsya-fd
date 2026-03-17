@@ -26,4 +26,12 @@
   --links-color: #f1b2ce;
   --button-hover: rgba(255, 0, 112, 0.4);
   }
+
+  .decorative-text {
+    visibility: visible;
+  }
+}
+
+.theme-dark .decorative-text {
+  visibility: visible;
 }
