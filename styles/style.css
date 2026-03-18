@@ -33,7 +33,7 @@
   min-height: 768px;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
-  margin-bottom: 60px;
+  margin-block-end: 60px;
 }
 
 .header__theme-menu {
@@ -116,8 +116,8 @@
   inline-size: 491px;
   justify-self: end;
   align-self: center;
-  margin-top: -20px;
-  margin-right: 20px;
+  margin-block-start: -20px;
+  margin-inline-end: 20px;
   font-family: var(--font-family, 'IBM Plex Mono', monospace);
   font-size: 18px;
   font-weight: 700;
@@ -157,9 +157,9 @@
 
 .section__content {
   display: grid;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 60px;
+  margin-inline-start: 20px;
+  margin-inline-end: 20px;
+  margin-block-end: 60px;
 }
 
 .section__hard {
@@ -177,11 +177,11 @@
 }
 
 .section__list-item {
-  margin-bottom: 20px;
+  margin-block-end: 20px;
 }
 
 .section__list-heading {
-  margin-bottom: 10px;
+  margin-block-end: 10px;
   font-family: var(--font-family, 'IBM Plex Mono', monospace);
   font-size: 18px;
   font-weight: 700;
@@ -210,7 +210,7 @@
 
 .section__title-attention {
   grid-area: title;
-  margin-bottom: 20px;
+  margin-block-end: 20px;
 }
 
 .section__list-attention {
@@ -237,7 +237,7 @@
 
 .section__list-heading--tips {
   height: min-content;
-  margin-bottom: 20px;
+  margin-block-end: 20px;
 }
 
 .section__list-tips {
@@ -245,7 +245,7 @@
 }
 
 .section__list-item--heading {
-  margin-bottom: 10px;
+  margin-block-end: 10px;
   font-family: var(--font-family, 'IBM Plex Mono', monospace);
   font-size: 18px;
   font-weight: 400;
@@ -261,7 +261,7 @@
 }
 
 .section__list-heading--images {
-  margin-bottom: 20px;
+  margin-block-end: 20px;
   font-family: var(--font-family, 'IBM Plex Mono', monospace);
   font-size: 18px;
   font-weight: 700;
@@ -337,7 +337,7 @@
 }
 
 .header__theme-menu {
-  margin-right: 20px;
+  margin-inline-end: 20px;
   padding-top: 16px;
   display: flex;
   flex-direction: column;
@@ -352,7 +352,7 @@
 
 .header__text {
   inline-size: 364px;
-  margin-right: 20px;
+  margin-inline-end: 20px;
   line-height: 1.3;
 }
 
@@ -377,7 +377,7 @@
 }
 
 .section__title-attention {
-  margin-bottom: 20px;
+  margin-block-end: 20px;
 }
 
 .section__list-attention {
@@ -415,18 +415,18 @@
 @media (max-width: 767px) {
 .header {
   min-height: 668px;
-  margin-left: 0;
+  margin-inline-start: 0;
   margin-block-end: 40px;
 }
 
 .header__title {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 0.83;
-  margin-left: 10px;
+  margin-inline-start: 10px;
 }
 
 .header__theme-menu {
-  margin-right: 10px;
+  margin-inline-end: 10px;
   padding-top: 75px;
 }
 
@@ -439,8 +439,8 @@
 
 .header__text {
   inline-size: 355px;
-  margin-right: 10px;
-  margin-top: -10px;
+  margin-inline-end: 10px;
+  margin-block-start: -10px;
 }
 
 .decorative-text {
@@ -449,25 +449,25 @@
 }
 
 .decorated-area::before {
-  top: 8px;
+  top: 10px;
   right: 10px;
 }
 
 .decorated-area::after {
-  bottom:13px;
+  bottom: 10px;
   left: 10px;
 }
 
 /*section1*/
 
 .section__content {
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 30px;
+  margin-inline-start: 10px;
+  margin-inline-end: 10px;
+  margin-block-end: 30px;
 }
 
 .section__content:last-child {
-  margin-bottom: 40px;
+  margin-block-end: 35px;
 }
 
 .section__hard {
@@ -499,15 +499,15 @@
   grid-template-areas: 
   "title"
   "list";
-  gap: 20px;
+  gap: 19px;
 }
 
 .section__list-heading--tips {
-  margin-bottom: 0px;
+  margin-block-end: 0px;
 }
 
 .section__list-item--heading {
-  margin-bottom: 10px;
+  margin-block-end: 10px;
 }
 
 /*section_images*/
@@ -519,16 +519,26 @@
 }
 
 .section__list-heading--images {
-  margin-bottom: 10px;
+  margin-block-end: 10px;
 }
 
 /*footer*/
 
 .footer {
+  position: relative;
+  block-size: 100vh;
   min-height: 668px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer__heading {
+  font-family: var(--font-family, 'IBM Plex Mono', monospace);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: 700;
+  line-height: 0.8;
+  color: var(--heading-color, #db00ff);
+  text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
 }
 }
